@@ -14,7 +14,8 @@ table{border-collapse:collapse;width:100%;font-size:.95rem}td,th{border:1px soli
 <p>Bartok Notifications is a personal, single-recipient SMS notification program operated by Jake Horvitz, a sole proprietor. This page documents the complete opt-in workflow and hosts screenshot proof of the consent experience, for A2P 10DLC campaign review.</p>
 
 <div class="box">
-<p><strong>Why there is no public web sign-up form.</strong> Bartok is self-hosted software that runs on the operator's own machine. It sends messages to exactly one number: the operator's own mobile number, entered and consented to by the operator during setup. There are no customer, subscriber, or third-party recipients, so there is no public sign-up page to link. In place of a sign-up URL, this page hosts screenshots of the full consent experience, as directed for opt-in flows that are not publicly accessible.</p>
+<p><strong>Opt-in evidence for A2P 10DLC review.</strong> This page is the hosted proof of the complete consent experience for the Bartok Notifications messaging program, published at <a href="https://jakehorvitz.github.io/bartok-legal/optin.html">https://jakehorvitz.github.io/bartok-legal/optin.html</a>. It shows the verbatim consent notice, the required disclosures, and two screenshots of the consent screen: one awaiting an active opt-in with nothing pre-filled or pre-selected, and one showing that declining enrolls nothing.</p>
+<p><strong>Why the opt-in is not a public web form.</strong> Bartok is self-hosted software that runs on the operator's own machine, and it sends messages to exactly one number: the operator's own mobile number, entered and consented to by the operator during setup. There are no customer, subscriber, or third-party recipients, so there is no public sign-up page to link. In place of a sign-up URL, this page hosts screenshots of the full consent experience, as directed for opt-in flows that are not publicly accessible.</p>
 </div>
 
 <h2>Program at a glance</h2>
@@ -62,11 +63,16 @@ Type YES to consent and enroll this number: _</pre>
 </figure>
 
 <h2>Sample messages</h2>
-<pre>[Bartok A7] SEND · low risk · expires in 72h: pitch draft for
-Vista Dental. Reply A7 YES / A7 NO.
+<p>These are the exact three sample messages registered on the A2P 10DLC campaign, reproduced here verbatim so a reviewer can cross-check them against the campaign submission.</p>
+<pre>[Bartok] Batch B3: 4 items ready for review. Reply B3 YES to
+approve or B3 NO to decline.
 
-[Bartok digest] 2 items pending: A7, B3. Reply &lt;code&gt; YES /
-&lt;code&gt; NO. Reply STOP to opt out.</pre>
+[Bartok digest] order #1182 refund journaled; A7 expired
+unactioned: outreach draft. Reply STOP to opt out.
+
+[Bartok] refund journaled on order 1182 ($240.00). Execute it
+on Stripe - I never auto-refund.</pre>
+<p>Every message identifies the program by name. The once-daily digest carries the opt-out instruction. No message contains a link: the sending software rejects any message body matching a URL pattern, which is why the campaign declares no embedded links.</p>
 
 <h2>Opting out and getting help</h2>
 <p>Reply <strong>STOP</strong> to any message to stop receiving messages at any time. Reply <strong>HELP</strong> for help. Opt-out and help keywords are handled by the messaging provider's standard opt-out management. Consent is never a condition of any purchase, and opt-in data is never shared with third parties. See the privacy policy for details.</p>
